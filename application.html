@@ -1,0 +1,122 @@
+<!DOCTYPE html> <!--states the type of languange used for the website-->
+<html> <!--start of html-->
+<head> <!--start of header-->
+    <title>Hot Beans Web</title> <!--start and and of title-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="application.css">
+
+    <!--scripts for alerts to notify the user that they need to fill in a specific box-->
+    <script>
+function check() {
+  
+  if (document.getElementById('fname').value == ""){ 
+  alert ('Please enter your first name');
+  return false;
+  }
+  if (document.getElementById('lname').value == ""){ 
+  alert ('Please enter your last name');
+  return false;
+  }
+  if (document.getElementById('country').value == "null"){ 
+  alert ('Please select your country');
+  return false;
+  }
+  if (document.getElementById('about').value == ""){ 
+  alert ('Please write something about yourself');
+  return false;
+  }
+  if (document.getElementById('subject').value == ""){ 
+  alert ('Please include your Qualifications');
+  return false;
+  }
+}
+</script>
+</head> <!--end of header-->
+<br>
+<br>
+<br>
+</div>
+<body> <!--start of main body-->
+   
+</div>
+    <!--navigation bar-->
+    <nav>
+        <div class="navbar">
+            <div id="nav-container">
+                 <ul>
+                      <li><a class="active" href="applications.html"><b>Application</b></a></li>
+                    <li><a href="qual.html"><b>Qualifications</b></a></li>
+                    <li><a href="courses.html"><b>Courses</b></a></li>
+                    <li><a href="staff.html"><b>Our Staff</b></a></li>
+                    <a href="main.html"> <img src="logo.png" id="logo" style="width:60px;height:60px"  /> </a>
+                <ul class="navigation">
+                </ul>
+            </div>
+        </div>
+     </a>
+    </div>
+    <div class="title">
+    <h1>
+     <b> Apply here! </b>
+      </h1>
+    </div>
+ <!--application form-->
+    <div class="container">
+      <form action="#" onsubmit="return check()" >
+        
+      <!--box for first name-->
+          <label for="fname"><b>First Name</b></label>
+          <input type="text" id="fname" name="firstname" placeholder="Your name..">
+      <!--box for second name-->
+          <label for="lname"><b>Last Name</b></label>
+          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+          <!--countries dropdown menu-->
+          <label for="country"><b>Country</b></label>
+          <select id="country" name="country">
+            <option value="null">-Not Selected-</option>
+            <option value="australia">Australia</option>
+            <option value="canada">Canada</option>
+            <option value="usa">USA</option>
+            <option value="UK">United Kingdom</option>
+            <option value="Germany">Germany</option>
+            <option value="France">France</option>
+            <option value="Belgium">Belguim</option>
+            <option value="Poland">Poland</option>
+            <option value="Italy">Italy</option>
+            <option value="Switzerland">Switzerland</option>
+            <option value="Russia">Russia</option>
+          </select>
+      <!--box for about section-->
+          <label for="subject"><b>About You</b></label>
+          <textarea id="about" name="subject" placeholder="Write something.." style="height:125px"></textarea>
+          <!--box for qualifications-->
+          <label for="subject"><b>Qualifications</b></label>
+          <textarea id="subject" name="subject" placeholder="Write something.." style="height:150px"></textarea>
+      <!--section for finish button-->
+      <div class="finish">
+          <input type="submit" value="Submit">
+        </div>
+        </form>
+      </div>
+     <!--footer section-->
+     <style>
+      .footer {
+      position: fixed; 
+      left: 0;
+      bottom: 0px;
+      width: 100%; /*width of the footer*/
+      background-color: rgb(100, 100, 100); /*--footer background colour*/
+      color: white; /*colour of the text*/
+      text-align: center; /*aligns the footer text to the centre*/
+      }
+  </style>
+  <div     
+  class="footer"> <!--footer class-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!--sets the font-->
+  <a href="https://www.instagram.com/google/" class="fa fa-instagram"></a> <!--clickable instagram logo-->
+  <a href="https://twitter.com/Google" class="fa fa-twitter"></a><!--clickable twitter logo-->
+<small><p>&copy; 2021 Szymon Oleksy </small> <!--name in footer-->
+  </p>
+</div>
+</html>

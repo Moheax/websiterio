@@ -1,0 +1,65 @@
+.title{
+    font-family: 'Montserrat', sans-serif;
+    position:sticky;
+    top:75px;
+    margin:10px;
+    text-align: center;
+}
+h1{
+  font-family: 'Montserrat', sans-serif;
+  position:sticky;
+  top:75px;
+  margin:10px;
+  text-align: center;
+
+}
+
+h3{
+  font-family: 'Montserrat', sans-serif;
+  position:sticky;
+  top:75px;
+  margin:10px;
+  text-align: center;
+
+}
+.description{
+    margin:10px;
+}
+* {
+    box-sizing: border-box;
+  }
+  body {
+    font-family: 'Montserrat', sans-serif;
+    
+  }
+  .column {
+    float: left;
+    left:50px;
+    width: 45%;
+    padding: 0 20px;
+    margin: 50px;
+  }
+  /* Remove extra left and right margins, due to padding in columns */
+  .row {margin: 0 -5px;}
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  } 
+  /* Style the counter cards */
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(240, 55, 55, 0.2); /* this adds the "card" effect */
+    padding: 20px;
+    text-align: center;
+    border-color: aqua;
+    background-color: #cccccc;
+  }
+  /* Responsive columns - one column layout (vertical) on small screens */
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
